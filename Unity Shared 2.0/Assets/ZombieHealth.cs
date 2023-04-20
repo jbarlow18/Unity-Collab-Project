@@ -25,7 +25,7 @@ public class ZombieHealth : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
-            if(health > 0 ){
+            if(health > 10 ){
                 health = health - 10;
                 Debug.Log("Health: " + health);
             } else {
