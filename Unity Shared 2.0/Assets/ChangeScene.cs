@@ -1,11 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class SomeScript : MonoBehaviour
 {
 
-    public void OnClick()
+    void Update()
     {
-        SceneManager.LoadScene("Main Scene");
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
