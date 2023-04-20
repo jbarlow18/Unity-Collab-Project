@@ -26483,7 +26483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1997151739}
   Player: {fileID: 2146406497}
-  runSpeed: 4
+  runSpeed: 2
 --- !u!195 &1997151739
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -26519,6 +26519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  bulletDamage: 10
 --- !u!136 &1997151741
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -27657,6 +27658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHealth: 100
+  zombieDamage: 10
+  delay: 0.3
 --- !u!114 &2146406499 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 434113066, guid: 19eadcf8fbed56b4da77ca94c1b4145f,

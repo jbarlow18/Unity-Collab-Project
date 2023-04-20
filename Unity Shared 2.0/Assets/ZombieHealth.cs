@@ -5,6 +5,7 @@ using UnityEngine;
 public class ZombieHealth : MonoBehaviour
 {
     public int health = 100;
+    public int bulletDamage = 10;
 
     Rigidbody rb;
     // Start is called before the first frame update
@@ -26,7 +27,7 @@ public class ZombieHealth : MonoBehaviour
         if(collision.gameObject.tag == "Bullet")
         {
             if(health > 10 ){
-                health = health - 10;
+                health = health - bulletDamage;
                 Debug.Log("Health: " + health);
             } else {
                 Destroy(gameObject);
