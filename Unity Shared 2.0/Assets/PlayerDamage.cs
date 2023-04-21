@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDamage : MonoBehaviour
 {
-    public int PlayerHealth = 100;
+    public static int PlayerHealth = 100;
     public int zombieDamage = 10;
     public float delay = 5;
     float timer;
