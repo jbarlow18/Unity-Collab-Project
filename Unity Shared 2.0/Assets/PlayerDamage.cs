@@ -40,6 +40,7 @@ public class PlayerDamage : MonoBehaviour
         }
         if(PlayerHealth <= 0)
         {
+            PlayerHealth = 100;
             SceneManager.LoadScene(0);
         }
     }
