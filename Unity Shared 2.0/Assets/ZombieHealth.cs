@@ -7,6 +7,7 @@ public class ZombieHealth : MonoBehaviour
     public int health = 100;
     public int bulletDamage = 10;
     public GameObject cubePrefab;
+    public static int kills = 0;
 
     Rigidbody rb;
     // Start is called before the first frame update
@@ -32,11 +33,12 @@ public class ZombieHealth : MonoBehaviour
                 health = health - bulletDamage;
                 Debug.Log("Health: " + health);
             } else {
-                Vector3 randomSpawnPosition = new Vector3(Random.Range(0, 150), 24, Random.Range(0, 150));
+                Vector3 randomSpawnPosition = new Vector3(Random.Range(25, 150), 24, Random.Range(25, 150));
                 //health += 100;
                 //Instantiate(cubePrefab, randomSpawnPosition, Quaternion.identity);
                 transform.position += randomSpawnPosition;
                 health += 100;
+                kills += 1;
             }
         }
     }
