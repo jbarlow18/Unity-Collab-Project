@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 117
+  controlID: 121
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 48
+  controlID: 63
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 49
+  controlID: 52
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,24 +324,24 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/FPS/Low Poly Shooter Pack - Free Sample/Code/Weapons
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/FPS/Low Poly Shooter Pack - Free Sample/Code/Weapons
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jcort_g1a3c1f\Documents\GitHub\Unity-Collab-Project\Unity
     Shared 2.0
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 208.6}
-    m_SelectedIDs: 22750000
-    m_LastClickedID: 29986
-    m_ExpandedIDs: 00000000e47400001a750000207500002c9100002e91000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: aea00000
+    m_LastClickedID: 41134
+    m_ExpandedIDs: 0000000094770000b077000096a0000098a0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4740000
+    m_ExpandedIDs: 0000000094770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9022ffff
-      m_LastClickedID: -56688
-      m_ExpandedIDs: 9c62ffff4cf6ffff96f6ffff9af6ffffa2f6ffffa6f6ffffb2f6ffffccf6ffffd0f6ffffe0f6ffffe4f6ffffeef6ffff04f7fffff0faffff76670000ec670000a08a0100
+      m_SelectedIDs: 88130000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 103cf9ff9c3cf9ffc4e8ffffc8e8ffffd8e8ffffdce8ffffe6e8fffff0faffff486b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
