@@ -24,7 +24,7 @@ public class ZombieHealth : MonoBehaviour
         
     }
 
-
+    //When player gets shot
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bullet")

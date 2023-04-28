@@ -9,6 +9,7 @@ public class PlayerDamage : MonoBehaviour
     public int zombieDamage = 10;
     public float delay = 5;
     float timer;
+    public GameObject HealthPowerup;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerDamage : MonoBehaviour
         
     }
 
+    //When player collides (and stays collided with) with an object
     private void OnCollisionStay(Collision collision)
     {
         
@@ -43,5 +45,21 @@ public class PlayerDamage : MonoBehaviour
             PlayerHealth = 100;
             SceneManager.LoadScene(0);
         }
+    }
+
+    //When player collides with a certain object
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "HealthPowerup")
+        {
+            if(PlayerDamage.PlayerHealth < 80)
+            {
+                PlayerDamage.PlayerHealth += 20;
+            } else {
+                PlayerDamage.PlayerHealth = 100;
+            }
+            Destroy(HealthPowerup);
+        }
+        
     }
 }

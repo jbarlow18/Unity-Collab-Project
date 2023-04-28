@@ -12,5 +12,9 @@ public class SomeScript : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
+        if(Input.anyKey)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
