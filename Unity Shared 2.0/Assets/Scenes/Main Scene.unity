@@ -1088,6 +1088,12 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &64646601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4403499229554151989, guid: 1817c05c1d86f0d4cb8bdde4473513e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 164303307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &64748065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26073,8 +26079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieDamage: 10
   delay: 0.3
-  HealthPowerup: {fileID: 4403499229554151989, guid: 1817c05c1d86f0d4cb8bdde4473513e4,
-    type: 3}
+  HealthPowerup: {fileID: 64646601}
 --- !u!114 &2146406499 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 434113066, guid: 19eadcf8fbed56b4da77ca94c1b4145f,
