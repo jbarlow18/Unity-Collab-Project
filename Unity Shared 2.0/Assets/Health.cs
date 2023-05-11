@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 {
     // Start is called before the first frame update
     public TMP_Text healthText;
+    public TMP_Text damageText;
     void Start()
     {
         

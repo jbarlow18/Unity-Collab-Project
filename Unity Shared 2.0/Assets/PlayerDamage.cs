@@ -10,6 +10,7 @@ public class PlayerDamage : MonoBehaviour
     public float delay = 5;
     float timer;
     public GameObject HealthPowerup;
+    public GameObject DamagePowerup;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +44,7 @@ public class PlayerDamage : MonoBehaviour
         if(PlayerHealth <= 0)
         {
             PlayerHealth = 100;
+            ZombieHealth.kills = 0;
             SceneManager.LoadScene(0);
         }
     }
@@ -60,6 +62,13 @@ public class PlayerDamage : MonoBehaviour
             }
             Destroy(HealthPowerup);
         }
-        
+
+        if(collision.gameObject.tag == "DamagePowerup")
+        {
+            //ZombieHealth.changeDamage(5);
+            Destroy(DamagePowerup);
+        }
+
     }
+
 }

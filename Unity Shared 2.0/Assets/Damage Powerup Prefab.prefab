@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3137032344043932538}
   - component: {fileID: 448069569328506838}
+  - component: {fileID: -8123086303753453556}
   m_Layer: 0
-  m_Name: Ammo Powerup
-  m_TagString: Untagged
+  m_Name: Damage Powerup Prefab
+  m_TagString: DamagePowerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +48,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2aae47e3efae14e8ea3eb2c639b8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &-8123086303753453556
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136671308964933284}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3901510758467314040
 GameObject:
   m_ObjectHideFlags: 0
