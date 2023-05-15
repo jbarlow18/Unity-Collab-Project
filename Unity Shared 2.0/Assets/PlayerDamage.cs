@@ -46,6 +46,7 @@ public class PlayerDamage : MonoBehaviour
             PlayerHealth = 100;
             ZombieHealth.kills = 0;
             ZombieHealth.bulletDamage = 1;
+            ZombieHealth.round = 1;
             SceneManager.LoadScene(0);
         }
     }

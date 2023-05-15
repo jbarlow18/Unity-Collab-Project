@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     public TMP_Text healthText;
     public TMP_Text damageText;
+    public TMP_Text roundText;
     void Start()
     {
         
@@ -19,5 +20,6 @@ public class Health : MonoBehaviour
     {
         healthText.text = "Health: " + PlayerDamage.PlayerHealth.ToString();
         damageText.text = "Damage: " + ZombieHealth.bulletDamage.ToString()+ "x";
+        roundText.text = "Round " + ZombieHealth.round.ToString();
     }
 }

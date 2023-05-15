@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ZombieHealth : MonoBehaviour
 {
-    public int health = 100;
+    public double health = 100;
     public static int bulletDamage = 1;
     public GameObject cubePrefab;
     public static int kills = 0;
     public GameObject healthPrefab;
     public static int highscore = 0;
+    public static int round = 1;
 
     public GameObject hp;
     public GameObject dp;
@@ -31,7 +32,7 @@ public class ZombieHealth : MonoBehaviour
 
     
 
-    //When player gets shot
+    //When zombie gets shot
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bullet")
@@ -55,18 +56,19 @@ public class ZombieHealth : MonoBehaviour
                 {
                     highscore = kills;
                 }
+                //ROUND SYSTEM
+                if (kills % 10 == 0 && kills > 9)
+                {
+                    hp.transform.position = new Vector3(74.54f,22.82f,44.57f);
+                    dp.transform.position = new Vector3(75.84f,22.82f,46.09f);
+                    Debug.Log(bulletDamage);
+                    Debug.Log(health);
+                    round++;
+                    health= health*2.1;
+                }
             }
 
-            //ROUND SYSTEM
-            if (kills % 10 == 0 && kills > 9)
-            {
-                bulletDamage ++;
-                health += 10;
-                hp.transform.position = new Vector3(74.54f,22.82f,44.57f);
-                dp.transform.position = new Vector3(75.84f,22.82f,46.09f);
-                Debug.Log(bulletDamage);
-                Debug.Log(health);
-            }
+            
 
             
         }
