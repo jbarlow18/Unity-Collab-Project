@@ -11,6 +11,9 @@ public class ZombieHealth : MonoBehaviour
     public GameObject healthPrefab;
     public static int highscore = 0;
 
+    public GameObject hp;
+    public GameObject dp;
+
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -58,13 +61,17 @@ public class ZombieHealth : MonoBehaviour
             }
 
             //ROUND SYSTEM
-            if (kills % 10 == 0)
+            if (kills % 10 == 0 && kills > 9)
             {
                 changeDamage(5);
                 health += 10;
+                hp.transform.position = new Vector3(74.54f,22.82f,44.57f);
+                dp.transform.position = new Vector3(75.84f,22.82f,46.09f);
                 Debug.Log(bulletDamage);
                 Debug.Log(health);
             }
+
+            
         }
     }
 }

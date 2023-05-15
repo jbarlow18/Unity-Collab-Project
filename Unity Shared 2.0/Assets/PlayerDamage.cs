@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerDamage : MonoBehaviour
 {
     public static int PlayerHealth = 100;
-    public int zombieDamage = 10;
+    public int zombieDamage = 5;
     public float delay = 5;
     float timer;
     public GameObject HealthPowerup;
@@ -60,13 +60,14 @@ public class PlayerDamage : MonoBehaviour
             } else {
                 PlayerDamage.PlayerHealth = 100;
             }
-            Destroy(HealthPowerup);
+            HealthPowerup.transform.position = new Vector3(76f, 15f, 51f);
         }
 
         if(collision.gameObject.tag == "DamagePowerup")
         {
             //ZombieHealth.changeDamage(5);
-            Destroy(DamagePowerup);
+            DamagePowerup.transform.position = new Vector3(76f, 15f, 51f);
+            ZombieHealth.bulletDamage+=5;
         }
 
     }
