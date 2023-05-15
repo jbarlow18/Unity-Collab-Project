@@ -12,6 +12,8 @@ public class ZombieHealth : MonoBehaviour
     public static int highscore = 0;
     public static int round = 1;
 
+    public static Vector3 place;
+
     public GameObject hp;
     public GameObject dp;
 
@@ -27,7 +29,7 @@ public class ZombieHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        place = this.transform.position;
     }
 
     
