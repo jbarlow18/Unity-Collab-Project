@@ -5,7 +5,7 @@ using UnityEngine;
 public class ZombieHealth : MonoBehaviour
 {
     public int health = 100;
-    public static int bulletDamage = 10;
+    public static int bulletDamage = 1;
     public GameObject cubePrefab;
     public static int kills = 0;
     public GameObject healthPrefab;
@@ -29,10 +29,7 @@ public class ZombieHealth : MonoBehaviour
         
     }
 
-    public static void changeDamage(int modify)
-    {
-        bulletDamage = bulletDamage + modify;
-    }
+    
 
     //When player gets shot
     private void OnCollisionEnter(Collision collision)
@@ -40,7 +37,7 @@ public class ZombieHealth : MonoBehaviour
         if(collision.gameObject.tag == "Bullet")
         {
             if(health > bulletDamage){
-                health = health - bulletDamage;
+                health = health - 10*bulletDamage;
                 
             } else {
                 int healthRandom = Random.Range(1, 10);
@@ -63,7 +60,7 @@ public class ZombieHealth : MonoBehaviour
             //ROUND SYSTEM
             if (kills % 10 == 0 && kills > 9)
             {
-                changeDamage(5);
+                bulletDamage ++;
                 health += 10;
                 hp.transform.position = new Vector3(74.54f,22.82f,44.57f);
                 dp.transform.position = new Vector3(75.84f,22.82f,46.09f);

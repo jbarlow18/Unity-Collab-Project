@@ -18,5 +18,6 @@ public class Health : MonoBehaviour
     void Update()
     {
         healthText.text = "Health: " + PlayerDamage.PlayerHealth.ToString();
+        damageText.text = "Damage: " + ZombieHealth.bulletDamage.ToString()+ "x";
     }
 }

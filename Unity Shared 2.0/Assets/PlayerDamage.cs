@@ -45,6 +45,7 @@ public class PlayerDamage : MonoBehaviour
         {
             PlayerHealth = 100;
             ZombieHealth.kills = 0;
+            ZombieHealth.bulletDamage = 1;
             SceneManager.LoadScene(0);
         }
     }
@@ -67,7 +68,7 @@ public class PlayerDamage : MonoBehaviour
         {
             //ZombieHealth.changeDamage(5);
             DamagePowerup.transform.position = new Vector3(76f, 15f, 51f);
-            ZombieHealth.bulletDamage+=5;
+            ZombieHealth.bulletDamage++;
         }
 
     }
