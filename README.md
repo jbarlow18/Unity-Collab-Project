@@ -8,7 +8,7 @@
   <li>Health and Damage Powerups</li>
   <li>Controller Support</li>
 </ul>
-<h1>Controls</h1>
+<h2>Controls</h2>
 <ul>
   <li>WASD or left Joystick to move</li>
   <li>R or Square to reload</li>
@@ -17,10 +17,10 @@
   <li>Scroll wheel or triangle to switch weapons</li>
   <li>Esc to quit</li>
  </ul>
- <h1><a href="https://drive.google.com/file/d/1rZrUlMLh-9o0RgUVVzhLiJBaepTSxf-H/view?usp=sharing">Google Drive Download</a></h1>
- <h1>Gameplay</h1>
+ <h2><a href="https://drive.google.com/file/d/1rZrUlMLh-9o0RgUVVzhLiJBaepTSxf-H/view?usp=sharing">Google Drive Download</a></h2>
+ <h2>Gameplay</h2>
  <img src="https://codehs.com/uploads/ffeac256c8df7f0b88bd17db3289d40e">
  <img src="https://codehs.com/uploads/a62d1e828b155f9beef9a7d892108f13">
  <img src="https://codehs.com/uploads/645087663c1d47fc8401f391046967bd">
- <h1>Credits</h1>
+ <h2>Credits</h2>
  <p>Shoutout to the dev group Caleb and Tiago for making this game with me and a shoutout to Mr.Groeneveld for saving us in all the storms we coded up.</p>
